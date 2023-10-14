@@ -221,8 +221,7 @@ I dont think it changed the relationship. Its still not significant.
 Add and commit this document (5 pts)
 ```{}
 #Commands here
-
-
+I went to the "git" icon in the right top side of my R panal and highlighted my document and then clicked commit. After that, I was bale to add my comments and commit it to githun. 
 ```
 
 Push your changes to github (10 pts)
