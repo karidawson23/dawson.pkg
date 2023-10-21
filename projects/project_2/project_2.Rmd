@@ -226,6 +226,6 @@ I went to the "git" icon in the right top side of my R panal and highlighted my 
 
 Push your changes to github (10 pts)
 ```{}
-
+I tried to puch my document but there was an issue authenticsting my account. But what I planne dto do was back tot eh git section, select my project_2 document and then selct puch which would ultimatly lead me to my github directory
 ```
 
