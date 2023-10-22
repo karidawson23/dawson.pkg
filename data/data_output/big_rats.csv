@@ -1,0 +1,29 @@
+record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,species,taxa,plot_type
+2133,10,25,1979,2,NL,F,33,274,Neotoma,albigula,Rodent,Control
+11329,3,9,1986,2,NL,M,34,240,Neotoma,albigula,Rodent,Control
+12871,5,28,1987,2,NL,M,32,278,Neotoma,albigula,Rodent,Control
+15302,12,14,1988,2,NL,M,35,248,Neotoma,albigula,Rodent,Control
+20040,5,30,1992,2,NL,F,36,220,Neotoma,albigula,Rodent,Control
+22899,10,28,1995,2,NL,F,32,171,Neotoma,albigula,Rodent,Control
+30175,1,8,2000,2,NL,M,34,265,Neotoma,albigula,Rodent,Control
+35212,12,7,2002,2,NL,M,33,248,Neotoma,albigula,Rodent,Control
+655,3,11,1978,3,NL,M,32,232,Neotoma,albigula,Rodent,Long-term Krat Exclosure
+11174,12,8,1985,3,NL,M,33,225,Neotoma,albigula,Rodent,Long-term Krat Exclosure
+8869,2,5,1984,15,NL,M,33,259,Neotoma,albigula,Rodent,Long-term Krat Exclosure
+17317,3,30,1990,15,NL,M,34,243,Neotoma,albigula,Rodent,Long-term Krat Exclosure
+26695,7,30,1997,15,NL,M,35,231,Neotoma,albigula,Rodent,Long-term Krat Exclosure
+5846,5,21,1982,12,NL,M,34,252,Neotoma,albigula,Rodent,Control
+20584,1,24,1993,12,NL,M,31,233,Neotoma,albigula,Rodent,Control
+21885,11,1,1994,12,NL,M,34,226,Neotoma,albigula,Rodent,Control
+24405,9,21,1996,12,NL,M,32,184,Neotoma,albigula,Rodent,Control
+27762,5,2,1998,12,NL,F,31,238,Neotoma,albigula,Rodent,Control
+33049,11,17,2001,12,NL,M,33,280,Neotoma,albigula,Rodent,Control
+1029,6,9,1978,18,NL,M,32,232,Neotoma,albigula,Rodent,Short-term Krat Exclosure
+8427,10,15,1983,18,NL,M,34,256,Neotoma,albigula,Rodent,Short-term Krat Exclosure
+2350,1,16,1980,6,NL,M,35,241,Neotoma,albigula,Rodent,Short-term Krat Exclosure
+3087,6,23,1980,13,NL,M,35,241,Neotoma,albigula,Rodent,Short-term Krat Exclosure
+4373,5,3,1981,24,NL,F,33,251,Neotoma,albigula,Rodent,Rodent Exclosure
+29821,9,11,1999,1,NL,M,35,227,Neotoma,albigula,Rodent,Spectab exclosure
+483,12,11,1977,8,DS,M,49,149,Dipodomys,spectabilis,Rodent,Control
+15459,1,11,1989,9,NL,M,36,275,Neotoma,albigula,Rodent,Spectab exclosure
+18927,8,7,1991,23,SF,F,30,199,Sigmodon,fulviventer,Rodent,Rodent Exclosure

@@ -1,0 +1,123 @@
+---
+title: "Homework Two"
+output: html_document
+---
+
+# Homework Two: Due Sept. 1 at 5 pm.
+
+First, we will use a modified version of surveys.csv, which has some strange values entered for NAs. Download like so: 
+
+
+```{r, eval=FALSE}
+download.file(url = "https://raw.githubusercontent.com/BiologicalDataAnalysis2019/2023/main/data/surveys.csv", destfile = "/cloud/project/homeworks/surveys.csv")
+```
+
+Also, download the homework. 
+```{r, eval=FALSE}
+download.file(url = "https://raw.githubusercontent.com/BiologicalDataAnalysis2019/2023/main/vignettes/homework_2.Rmd", destfile = "/cloud/project/homeworks/homework_2.Rmd")
+```
+
+
+Each question will direct you to perform a task. Each question that expects code as an answer will have a space for you to enter the code. 
+
+You are welcome, and even encouraged, to work with a partner. I do ask, though, that every member submits their own homework. To submit your homework, simply save it in your RStudio. I will see it.
+
+
+## Question One - 1 point.
+
+Load in the `surveys.csv` data file that is located in your homework folder, and save it to a variable called `surveys`. Use the read_csv function in the `tidyverse` package to do this.
+
+```{r}
+#Enter your answer for Question 1 here
+surveys <- read_csv("surveys.csv")
+
+```
+
+## Question Two - 1 point
+
+Have a look at the copy of `surveys.csv`. You will notice that there are some unusual NA values. Particularly, the "species_id" column has some odd values. Look at the help page for `read_csv`. Can you find a way to read these unusual values as NAs? Are you able to process both NA and the odd value as NAs? Try it out.
+```{r}
+#Enter your answer for Question 2 here
+
+missing_data_points<- read_csv("surveys.csv", na = c("Not Recorded", "NA"))
+
+
+```
+
+## Question Three - 1 point
+
+Remove the NA values from the `hindfoot_length` column using a pipe and a filter.
+```{r}
+#Enter your answer for Question 3 here
+na_removed_hindfoot <- surveys %>%
+filter(!is.na(hindfoot_length))
+```
+
+## Question Four - 2 points
+
+Verify that the NA values were removed. Don't do this by looking at the column - use code.
+```{r}
+#Enter your answer for Question 4 here
+
+na_removed_hindfoot %>%
+summarise(mean_weight = mean(weights))
+
+```
+
+## Question Five - 1 point
+
+Explain the logic of your answer to Question Four. How did you accomplish this? 
+
+#If you have NA's within your data set, R wold be unable to produce a numercial answer when performing some mathmatical calculations such as the mean. If there were NAs in the data set, I would have simply got an NA as my answer, not a number. By succesfully calculating the mean, I know with 100% certainty that there are no NA's in my data set. 
+
+#AMW: Good.
+
+## Question Six - 1 point
+
+Imagine you are testing the hypothesis that mammal body sizes will be larger under climate change to decrease surface to body size ratio. First, what columns in the data frame will you use to address this question? 
+
+#If i had the correct csv. file, I would use the weight, year and taxa columns to answer this question. If you didnt have the taxa column, you could use the species_id column to answer this assuming you know which species_id's collelated with the mammals.
+
+## Question Seven - 2 points
+
+Let's try some analysis: Use a `filter`, a `group_by`, and a `summarize` to decide if you think mammal body sizes are decreasing under climate change.
+
+```{r eval=FALSE}
+missing_data_points %>% 
+  na.omit() %>% 
+  group_by(year) %>% 
+summarise(mean_weight = mean(weight))
+```
+
+#I did not have a taxa column for some reason. If I did I would filter by both rodents and rabbits to only look at the data from the mammals. Since I am looking at the entire data set, I do not believe there is a need for me to use the filter function
+```
+
+## Question Eight - 1 points
+
+Based on the outputs of question 7, does it look like mammal body sizes are decreasing over time?
+
+```{r}
+missing_data_points %>% 
+  na.omit() %>% 
+  summarise(mean_weight = mean(weight))
+```
+
+```{r}
+#averages for first half and second half of data set
+
+missing_data_points %>% 
+  na.omit() %>% 
+  filter(year <=1992) %>% 
+  summarise(mean_weight = mean(weight))
+
+missing_data_points %>% 
+  na.omit() %>% 
+  filter(year >=1992) %>% 
+  summarise(mean_weight = mean(weight))
+```
+
+#I was curious about the average weight throughout all years (Located above). The average weight is roughly 36g and it can be found throughout the time frame of the data set. However, it does seem like the weight prior to 1992 was closer to 40g and the weight after 1992 was closer to 32g. So that data may suggest there might be a trend of decreasing weight through time.I don't know how significant this difference though.  
+
+#AMW: Good.
+
+```

@@ -1,0 +1,71 @@
+---
+title: "Homework Four"
+output: html_document
+---
+
+# Homework Four: Due Sept. 23  at 5 pm.
+
+First, download your homework. In your RStudio, fill in the below command:
+
+```{r, eval = FALSE}
+download.file(url = "https://raw.githubusercontent.com/BiologicalDataAnalysis2019/2022/main/vignettes/homework_4.Rmd", destfile = "")
+
+```
+
+# Question One:
+
+Take a look at [this](https://github.com/ropensci/treedata.table) package. Reading the documentation, what is the primary goal of this package? 
+```
+#Answer Here
+The goal of this package, is to manipulate phylogenetic treeand other triat data that allows for easaier and quickker comparative analysis. 
+
+```
+# Question Two
+
+Where in this package is the actual code stored? How do you know?
+```
+#Answer here
+I believe its saved to the default place which should be the library with most other packages. I believe this for two reasons. On the website, it gives instructions on how to install this package which needs the function remotes. Well after installing it with the help of the remotes function, you load it with the library function which saves it to the library like all the other packages we've downloaded. Without running it through the library function first, it would be temporarily saved within your current working directory. 
+
+Oh I think I misunderstood initially; within the package the code is stored within the R folder. I know because I checked out all the other folders and they contained other information. 
+```
+
+
+# Question 3
+
+When you look into the code, are you able to understand any of it? What is one thing the authors could do to make the code more understandable?
+```
+# Answer here
+I am able to understand some of the general jist. For most of mv confusion came from not knowing what a particular function is; the authors may be able to assist with that by writing in the use a function that may not be as intuitive as the function "sum". I think this will help readers who are less familiar in R and may get confusing quickly.
+```
+# Question 4
+
+What are the other directories in the package? What do they contain?
+```
+Answer here
+There are some other folders such as one that’s called "data" which contains Anolis' data. there are also a few free floaters with misc. info such as the authors of the package in the description file and license file contains the copyright information.
+
+```
+
+# Question 5
+
+Do you trust that this package does what it says it is doing? Why or why not? 
+
+```
+Answer here
+I would trust this package. I know that you, (April) were a co-author for this package. But other than that, there are a significant amout of comments of this package and I was able to run at least the R code without errors; I have yet to try it with our data. 
+
+```
+# Question 6
+
+Have a look at [these](https://libguides.bc.edu/dataplan/best_practices) data storage best practices from Boston College. Have this read by Sept. 27 as we will use this in an activity.
+
+
+## Master's Students
+```{}
+Find a package that does something you'd like to do for your dissertation. Apply the steps above to this package to evaluate its reliability.
+
+I decided to use ggiraph which is a package that makes interactive plots. From the code, I am able to see how if the user hovers over the interactive bit, what change happens to the aesthetic. Additionally, I think similarly, the code is stored in the R folder similar to the tree data table code. The other directories contain examples of code to allow the user to practice, a read.me file and alot of other random files I don’t really understand or will use. I trust this data because I was able to successfully run two of the example chunks and I can see people have been tweaking errors within the code and constantly improving this code. I would trust it enough to play around and see how it looks with my data. I really like this website btw. I plan to explore it further once it is time for my data analysis.
+
+#AMW: Neat.
+```

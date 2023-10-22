@@ -1,0 +1,58 @@
+---
+title: "Tables"
+output: html_document
+date: "2023-08-31"
+---
+
+```{r}
+mini_table <- surveys %>%
+na.omit() %>%
+group_by(plot_type) %>%
+filter(species_id == "NL") %>%
+count() 
+
+mini_table
+```
+```{r}
+
+table <- mini_table %>% 
+rename_at("plot_type", ~"Experimental Treatment")
+
+table <- table %>% 
+  rename_at("n", ~ "Number Sampled")
+
+table
+
+```
+
+
+```{r}
+
+data_for_table <- surveys %>% 
+  na.omit() %>% 
+  select(species_id, weight, year) %>% 
+  group_by(year) %>% 
+  summarise(mean_weight = mean(weight)) %>% 
+  arrange()
+
+data_for_table
+
+```
+
+```{r}
+
+DT::datatable(data_for_table)
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
