@@ -27,6 +27,8 @@ turtles_sampled
 #Predictor is the curved carapace length and the response is either VTG, E2, or T
 #I predict that the size of the turtle may effect it's concentration of sex steroids and other reproductive biomarkers.
 
+#AMW: Cool. 
+
 ```
 
 Plot the two against each other with a scatter plot. Do the data appear to be related linearly? (5 pts)
@@ -70,6 +72,8 @@ Std Error : it is currently at 21.75 qhich I would say is very very far from 0. 
 intercept :The p value for my intercept is not significant which would suggest that it does not differ from 0. 
 R-squared : So from my understanding, the closer R squared is to one, the better becuase that would be esentially saying that 100% of the variation is explained by the model. My r squared is pretty close to 1 actually so it jsut really looks random to me. 
 -So far, I would say my predictor isnt predicting anything. It really just looks random to be and that there is no relationship between testosterone and reproductive output. 
+
+#AMW: It's like anti-predictive. Amazing. 
 ```
 
 Plot the model on the graph. Increase the size of the text so it is comfortably readable at 5 feet. Make sure axis labels are readable and not overlapping with one another. (5 pts)
@@ -105,6 +109,8 @@ hist(residuals, main = "Residuals Histogram")
  qqline(residuals)
  
  shapiro.test(residuals)
+ 
+ #AMW: The idea of doing a Shapiro-Wilk test is interesting. I wonder if people actually do that in practice?
 
  #because my residuals vary widly in both the positive and negative, it is an indication that  the model has  relatively large errors in some predictions and I would not trust it. I do not believe they are currently in violation of any assumptions. 
 ```
@@ -226,6 +232,8 @@ I went to the "git" icon in the right top side of my R panal and highlighted my 
 
 Push your changes to github (10 pts)
 ```{}
-I tried to puch my document but there was an issue authenticsting my account. But what I planne dto do was back tot eh git section, select my project_2 document and then selct puch which would ultimatly lead me to my github directory
+I tried to puch my document but there was an issue authenticsting my account. But what I planned to do was go back to the git section, select my project_2 document and then selct puch which would ultimatly lead me to my github directory. Anytime I try, it says the authentication has failed.I think my steps are correct but I dont know why it wont allow me to put my credentials in to push it through. I. will try and figure it out. 
+
+#AMW: We can figure it out when we're back in class
 ```
 
