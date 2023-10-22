@@ -5,3 +5,4 @@ clean <- function(data, column) {
 }
 
 #this function will remove na's from the data set
+

@@ -17,4 +17,5 @@ print("\nLinear Regression Results:")
 print(results$LM)
 
 
+
 # This function will run both an lm and anova on the dataset entered 
