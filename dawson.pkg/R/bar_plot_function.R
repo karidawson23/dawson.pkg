@@ -8,5 +8,6 @@ labs(title = title, x = x_label, y = y_label)
 
 print(plot)
 }
+
  
 # this funtion will create a bar plot form my data
